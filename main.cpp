@@ -8,7 +8,7 @@ using namespace std;
 
 int main()
 {
-	ifstream in("input1.txt");
+	ifstream in("input3.txt");
 	int n = 0;
 	char buffer[STR_LENGHT + 1];
 	buffer[STR_LENGHT] = 0;
@@ -30,12 +30,15 @@ int main()
 
 	base(arr, triang, rectang, circle);
 
-	ofstream out("out.txt");
+	ofstream out("out3.txt");
 
-	cout << "Trianges: " << triang << ", Rectangels: " << rectang << ", Circles: " << circle<<endl;
+	//cout << "Trianges: " << triang << ", Rectangels: " << rectang << ", Circles: " << circle<<endl;
 
-	for (int i = 0; i < STR_LENGHT; i++)
-		out << arr[i] << '\n';
+	/*for (int i = 0; i < STR_LENGHT; i++)
+		out << arr[i] << '\n';*/
+
+	out << rectang << circle << triang << '\n';
+	out.close();
 
 	system("pause");
 	return 0;
