@@ -148,7 +148,6 @@ bool checkRectang(int &rectang, int i, int j, char** arr)
 
 void limits(int i, int j, char** &arr, queue<int> numer, Num* numbers, int &triang, int &rectang, int &circle)
 {	
-	bool check = false;
 	int gi, gj, mur = 0;
 	int si = i, sj = j;
 	while (!numer.empty())// пока не обошли все точки вокруг
